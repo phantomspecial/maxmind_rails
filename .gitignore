@@ -31,3 +31,8 @@
 /config/master.key
 
 .idea
+
+# Maxmind DB
+db/COPYRIGHT.txt
+db/GeoLite2-Country.mmdb
+db/LICENSE.txt
