@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+MaxmindRails
 
-Things you may want to cover:
+グローバルIPアドレスから国籍を割り出す
 
-* Ruby version
+* Ruby version 2.6.4
 
 * System dependencies
+    * rails 5.2.4
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Maxmind GeoLite2をDLして、< Application Root >/db配下に保存する。  
+ファイル名は、GeoLite2-Country.mmdbとする。
