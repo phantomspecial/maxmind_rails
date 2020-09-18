@@ -1,0 +1,8 @@
+.col-md-12
+  .row.mb-2
+    .col-md-3
+      = @results.count.to_s(:delimited)
+      | 件
+    .col-md-6
+    .col-md-3.text-right
+      = link_to 'CSVダウンロード', maxminds_search_path(q: @search_form.instance_values, format: :csv), data: { confirm: "ダウンロードを開始しますか？" }, class: 'btn btn-secondary col-md-12'
