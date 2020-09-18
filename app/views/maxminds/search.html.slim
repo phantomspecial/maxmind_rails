@@ -1,0 +1,18 @@
+#maxminds_search_form
+  .container
+    = render 'maxminds/search_form'
+  - if @results.present?
+    = render 'maxminds/paginate_csvdlbtn'
+    .col-md-12
+      table.table.table-hover.table-sm.table-bordered
+        thead.thead-dark.text-center
+          tr
+            - @search_form.class::HEADER.each do |h|
+              th = h
+        tbody
+          - @results.each do |result|
+            tr
+              td = result[:ip]
+              td = result[:iso_code]
+
+    = render 'maxminds/paginate_csvdlbtn'
